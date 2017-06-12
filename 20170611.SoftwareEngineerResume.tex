@@ -1,0 +1,100 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[a4paper, 10pt]{article}
+\usepackage{enumitem} % for leftmargin of itemize
+\usepackage{sectsty} % for section styling like header font size
+
+% LAYOUT %
+% Font
+%% Set \header command
+\makeatletter
+\newcommand\header{\@setfontsize\Huge{14}{14}} % for my name
+\makeatother
+
+\sectionfont{\fontsize{12}{12}\selectfont}
+
+% Margins
+\usepackage[margin=1in]{geometry} % for page margin
+
+% Indentation
+\setlength\parindent{.5in}
+
+% Page Numbering
+\pagenumbering{gobble}
+
+% Table
+\setlength{\arrayrulewidth}{0mm}
+\setlength{\tabcolsep}{1pt}
+
+
+% DOCUMENT %
+\begin{document}
+
+\noindent
+\textbf{\header Michael L. Otte}
+\vspace{-3mm}
+
+\noindent
+\line(1,0){452}\\[2mm]
+\begin{tabular}{ |p{2.9in}|p{3.75in}| }
+{\sl Cell:} (831) 704-6563 & {\sl LinkedIn:} www.linkedin.com/in/michaelotte13 \\[0mm]
+{\sl Email:} MichaelOtte1@gmail.com & {\sl GitHub:} www.github.com/motte \\[3mm]
+\end{tabular}\\[-5mm]
+
+\section*{SELECTED EXPERIENCES}
+\vspace{-3mm}
+
+{\bf Freenome}{, South San Francisco, CA}\hfill {\bf September 2015-Current \\}
+{\sl CTO, VP of Product, Software Engineer - freenome.com} \newline
+\indent I created several big data pipelines, alone and in a small team, that would process raw genomic data (raw read data), conduct automated or semi-automated feature selection, and input into various statistical learning methods (e.g. various perceptrons, random forest, and more).  With the uniquely challenging "big" dataset, I had the opportunity to implement a number of feature selectors on the genomic datasets in various AMQP systems (which I also designed and implemented) and format them into different types of matrices.
+
+\indent I also developed a web-based genome browser (a visualization to analyze one or more genomic samples), which is often used for manual pattern recognition, analysis, and inter-sample comparison from vcf format files (essentially analytical/processed files of genetic variants).  For about a year, I worked with engineers at Google, Microsoft Azure, and AWS to implement feature suggestions on their platform and improve their big data and genomics/bioinformatics offerings (e.g. Google cloud functions, azure IAMs, Google genomics, etc.).  I did not code for them, but provided direct suggestions from our experience on their platforms, had in-person meetings with their chief compliance officer and head of Google Cloud, and eventually formalized a partnership with them.  In addition to software engineering and computational bioinformatics, I was involved in the development of tolerance and empathy in the workplace (a culture of "it's ok to mess up!").  I was also significantly involved in hiring, partnership/investor talks, clinical lab regulatory talks, technical/regulatory documentation systems, and technical/business presentations.  I spent much of my time collaborating and learning how to work with a highly interdisciplinary team with some of the best in their respective fields.  I am happy to talk in greater detail about any of these projects and the other projects that I worked on (but not mentioned here).\\[-6mm]
+\begin{itemize}[leftmargin=5mm] 
+\itemsep -2pt
+	\item Helped grow the company from 4 to ~30 people and raise over \$70 million (from seed to Series A)
+	\item Created, lead, and developed 3+ critical projects (using Python, React, HTML/CSS/JS, D3.js)
+	\item Worked with "data scientists," computational biologists, and applied mathematicians to implement statistical models
+\end{itemize}
+                 
+\noindent
+{\bf Acorn}{, New York, NY - \sl Exited}\hfill {\bf May 2014-May 2015 \\}
+{\sl COO, Lead Engineer, Co-Founder - acornapp.co} \\
+\indent Coded a novel, patented location-acquisition tech for mobile.  Setup a highly scalable distributed system.  Coded a RWD web application that was rated over 90\% by Google Page Speed and Yahoo YSlow by utilizing image compression to JS minimization.  This reduced overall latency and page load speeds by over 80\%.  Also, created a mobile-server client API and an OAuth 2.0 Protocol API to enable more powerful and modular computations for the mobile app.  Management, fundraising, work flow, and culture-building experience in startup setting. \\[-6mm]
+\begin{itemize}[leftmargin=5mm] 
+\itemsep -2pt
+	\item Helped develop two novel IPs in location acquisition tech
+	\item Full Stack Web and Mobile Development with backend API server
+	\item Built development team and established startup workflow
+\end{itemize}
+                 
+\noindent
+{\bf Dartmouth-Hitchcock Medical Clinic}{, Lebanon, NH}\hfill {\bf May 2011-August 2013 \\}
+{\sl Researcher - geiselmed.dartmouth.edu/rigby/}\\[-6mm]
+\begin{itemize}[leftmargin=5mm] 
+\itemsep -2pt
+	\item Studied the effects of rituximab (a.k.a. rituxan) in depletion of B cells via antibody-mediated cell shaving and complement dependent cell cytotoxicity
+	\item Performed over 100 experiments through the entire process from experimental design to analysis and QA/QC
+	\item Techniques included assay prep, PBMC and sera isolation from whole blood, cell carrying, and laser flow cytometry
+	\item Resulting paper: {\sl Induction of interleukin-6 production by rituximab in human B cells.} doi: 10.1002/art.38798
+\end{itemize}      
+                 
+\section*{RECENT DEVELOPMENT EXPERIENCE}
+\vspace{-3mm}
+Python, Javascript (including React, Node.js, Angular.js, jQuery), HTML5+CSS3, PostgreSQL, MySQL, Nginx + gunicorn + uWsgi, various shell scripting, PHP ($\sim$2010), Java ($\sim$2007)
+                 
+\section*{INTERESTS}
+\vspace{-3mm}
+I enjoy contributing to open/free source projects (e.g. Airflow), conducting biological and ethnographic research, rock climbing, surfing, singing, and volunteering.  I started coding in Hypercard when I was 10, and proceeds from my early freelance work was donated to charities (I recommend UNICEF).  I used to be an EMT (an "ambulance driver") and was the personal assistant to a former U.S. surgeon general.
+
+\section*{EDUCATION}
+\vspace{-3mm}
+{\bf Dartmouth College}, Hanover, NH \hfill June 2013 \\[-7mm]
+\begin{itemize}[leftmargin=5mm] 
+\itemsep -1mm
+	\item[] {\sl B.A.} {Socio-Cultural Anthropology (Honors Student w/ Research)}
+	\item[] {\sl ND} {Biology, Concentration in Immunology}
+	\item[] {\sl ND} {Pre-Medicine}
+\end{itemize}
+                
+\end{document}
