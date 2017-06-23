@@ -1,0 +1,84 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[a4paper, 12pt]{article}
+\usepackage{enumitem} % for leftmargin of itemize
+\usepackage{sectsty} % for section styling like header font size
+
+% LAYOUT %
+% Font
+%% Set \header command
+\makeatletter
+\newcommand\header{\@setfontsize\Huge{14}{14}} % for my name
+\makeatother
+
+\sectionfont{\fontsize{12}{12}\selectfont}
+
+% Margins
+\usepackage[margin=1in]{geometry} % for page margin
+
+% Indentation
+\setlength\parindent{.5in}
+
+% Page Numbering
+\pagenumbering{gobble}
+
+% Table
+\setlength{\arrayrulewidth}{0mm}
+\setlength{\tabcolsep}{1pt}
+
+
+% DOCUMENT %
+\begin{document}
+
+\noindent
+\textbf{\header Michael L. Otte}
+\vspace{-3mm}
+
+\noindent
+\line(1,0){452}\\[2mm]
+\begin{tabular}{ |p{2.9in}|p{3.75in}| }
+{\sl Cell:} (831) 704-6563 & {\sl LinkedIn:} www.linkedin.com/in/michaelotte13 \\[0mm]
+{\sl Email:} MichaelOtte1@gmail.com & {\sl GitHub:} www.github.com/motte \\[3mm]
+\end{tabular}\\[-5mm]
+
+\section*{SELECTED EXPERIENCES}
+\vspace{-3mm}
+
+{\bf Freenome}{, South San Francisco, CA}\hfill {\bf September 2015-Current \\}
+{\sl CTO, VP of Product, Software Engineer - freenome.com} \newline
+\indent I created several big data pipelines, alone and in a small team, that process raw genomic data (raw read data), conduct automated or semi-automated feature selection, and input into various statistical learning methods (e.g. various perceptrons, random forest, and more).  With the uniquely challenging "big" dataset, I had the opportunity to implement a number of feature selectors on the genomic datasets in various AMQP systems and format them into different types of matrices.  These pipelines improved efficiency of processing by 10-100X.
+
+\indent I also developed a lung cancer risk prediction application and a web-based genome browser (a visualization to analyze one or more genomic samples), which is often used for manual pattern recognition, analysis, and inter-sample comparison from vcf format files (essentially analytical/processed files of genetic variants).  For about a year, I worked with engineers at Google, Microsoft Azure, and AWS to implement feature suggestions on their platform and improve their big data and genomics/bioinformatics offerings (e.g. Google cloud functions, azure IAMs, Google genomics, etc.). \\[-6mm]
+\begin{itemize}[leftmargin=5mm] 
+\itemsep -2pt
+	\item Helped grow the company from 4 to ~30 people and raise over \$70 million
+	\item Created, lead, and developed 3+ critical projects (using Python, React, HTML/CSS/ES6)
+	\item Worked with ML experts and mathematicians to implement statistical models
+\end{itemize}
+\vspace{0.5mm}
+\noindent
+{\bf Acorn}{, New York, NY - \sl Exited/Closed}\hfill {\bf May 2014-May 2015 \\}
+{\sl COO, Lead Engineer, Co-Founder - www.facebook.com/acornapp/ (formerly acornapp.co)} \\
+\indent Coded a novel, patented location-acquisition tech for mobile.  Setup a highly scalable distributed system.  Coded a RWD web application that was rated over 90\% by Google Page Speed and Yahoo YSlow by utilizing image compression to JS minimization.  This reduced overall latency and page load speeds by over 80\%.  Also, created a mobile-server client API and an OAuth 2.0 Protocol API to enable more powerful and modular computations for the mobile app.
+%\begin{itemize}[leftmargin=5mm] 
+%\itemsep -2pt
+%	\item Helped develop two novel IPs in location acquisition tech
+%	\item Full Stack Web and Mobile Development with backend API server
+%\end{itemize}
+                 
+\section*{RECENT DEVELOPMENT EXPERIENCE}
+\vspace{-3mm}
+Python, Javascript (including React, Node.js, Angular.js, jQuery), HTML5+CSS3, PostgreSQL, MySQL, Nginx + gunicorn + uWsgi, shell scripting, PHP ($\sim$2010), Java ($\sim$2007)
+                 
+\section*{EDUCATION}
+\vspace{-3mm}
+{\bf Dartmouth College}, Hanover, NH - {\sl Socio-Cultural Anthropology} \hfill June 2013
+                 
+\section*{INTERESTS}
+\vspace{-3mm}
+I enjoy contributing to open source projects (e.g. Airflow), conducting biological and ethnographic research, rock climbing, surfing, singing, and volunteering.  I started coding in Hypercard when I was 10, and proceeds from my freelance work were donated to charities (e.g. UNICEF).  I used to be an EMT (an "ambulance driver") and was the personal assistant to a former U.S. surgeon general.
+
+
+                
+\end{document}
